@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <video autoplay muted loop id="myVideo">
+    <source src="https://static.vecteezy.com/system/resources/previews/003/146/726/mp4/red-circle-particles-bokeh-light-background-free-video.mp4" type="video/mp4">
+  </video>
+<head>
+  <style>
+    #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="question">Do You Love Me?</div>
+    <div class="options">
+      <div class="option" onmouseover="updateEmoji('smile')" onmouseout="updateEmoji('')" onclick="showModal('https://media.tenor.com/HqGVMBsEDWsAAAAC/ted-kiss.gif')">Yes</div>
+      <div class="option" onmouseover="updateEmoji('sad'); handleNoHover();" onmouseout="updateEmoji(''); handleNoHoverEnd();" onclick="moveBox('No')">No</div>
+      
+    </div>
+    <div id="link" class="link"></div>
+    <div id="emoji"></div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <p>I ALREADY KNEW IT....:</p>
+      <img id="modalImage" src="" alt="Image">
+      ;>
+    </div>
+  </div>
+
+ 
+</body>
+</html>
